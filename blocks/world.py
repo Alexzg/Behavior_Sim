@@ -1,7 +1,7 @@
 class Map(object):
 	def __init__(self):
 		self.grid = []
-		self.days_per_simulation = 0
+		self.episodes = 0
 		self.turns_per_day = 0
 		self.turns_left = 0
 	
@@ -10,5 +10,6 @@ class Map(object):
 		self.position = []
 	
 	def population(self):
-		self.total_number = 0
+		self.start_number = 0
+		self.episode = []
 		self.individuals_obj_list = []
