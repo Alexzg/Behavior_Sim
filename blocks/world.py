@@ -1,9 +1,14 @@
 class Map(object):
 	def __init__(self):
 		self.grid = []
-		self.food_position = []
-		self.turns = 0
-		self.turn_now = 0
+		self.days_per_simulation = 0
+		self.turns_per_day = 0
+		self.turns_left = 0
 	
-	def creatures(self):
+	def food(self):
+		self.pcs_per_day = 0
+		self.position = []
+	
+	def population(self):
 		self.total_number = 0
+		self.individuals_obj_list = []
